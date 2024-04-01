@@ -1,0 +1,40 @@
+-- BUAT TABLE DAN NAMA COLUMN BERDASARKAN DATASET ORIGINAL
+CREATE TABLE table_m3 (
+	"Area Code" INTEGER,
+	"Cogs" INTEGER,
+	"DifferenceBetweenActualandTargetProfit" INTEGER,
+	"Date" DATE,
+	"Inventory Margin" INTEGER,
+	"Margin" INTEGER,
+    	"Market Size" VARCHAR(255),
+	"Market" VARCHAR(255),
+	"Marketing" INTEGER,
+	"Product_line" VARCHAR(255),
+	"Product_type" VARCHAR(255),
+	"Product" VARCHAR(255),
+	"Profit" INTEGER,
+	"Sales" INTEGER,
+   	"State" VARCHAR(255),
+	"Target_cogs" INTEGER,
+	"Target_margin" INTEGER,
+	"Target_profit" INTEGER,
+	"Target_sales" INTEGER,
+	"Total_expenses" INTEGER,
+	"Type" VARCHAR
+);
+
+-- COPY DATASET ORIGINAL TERLEBIH DAHULU KE FOLDER INSTALASI PGADMIN4
+-- BARU COPY DATASET ORIGINAL KE POSTGRESQL
+SET datestyle = 'MDY';
+COPY table_m3
+FROM 'C:\Program Files\PostgreSQL\16\pgAdmin 4\M-3\P2M3_Raden_Rian_data_raw.csv'
+DELIMITER ','
+CSV HEADER;
+
+ATAU copy ke psql tools
+\copy table_m3 FROM 'C:\Users\SQ-1256\Downloads\M-3\POSTGRESQLM3\P2M3_Raden_Rian_data_raw.csv' DELIMITER ',' CSV HEADER;
+
+
+
+
+
