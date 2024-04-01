@@ -1,11 +1,8 @@
 '''
 =================================================
-Milestone 3
-
 Nama  : Raden Rian Girianom
-Batch : FTDS-028-RMT
 
-Program ini dibuat untuk melakukan automatisasi transform dan load data dari PostgreSQL ke ElasticSearch. 
+Objective : Program ini dibuat untuk melakukan automatisasi transform dan load data dari PostgreSQL ke ElasticSearch. 
 Adapun dataset yang dipakai mengenai sales coffee chain analysis 2013-2015.
 =================================================
 '''
